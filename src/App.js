@@ -1,29 +1,23 @@
-import Welcome from "./pages/welcome/Welcome";
-import "./app.scss";
-import Home from "./pages/home/Home";
-import Planning from "./pages/planning/Planning";
-import Congratulation from "./pages/congratulation/Congratulation";
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import logo from './logo.svg';
+import './App.css';
 
 function App() {
   return (
-    <div className="app">
-      <Router>
-        <Switch>
-          <Route exact path="/">
-            <Welcome/>
-          </Route>
-          <Route path="/home">
-            <Home/>
-          </Route>
-          <Route path="/planning">
-            <Planning />
-          </Route>
-          <Route path="/congratulation">
-            <Congratulation />
-          </Route>
-        </Switch>
-      </Router>
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
     </div>
   );
 }
