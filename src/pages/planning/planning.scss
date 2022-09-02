@@ -1,0 +1,37 @@
+@import "../../commonCss/common_css.scss";
+
+.planning{
+    @include mainContentLayout;
+
+    .login{
+        display: flex;
+        justify-content: center;
+        margin-top: .8rem;
+
+        .loginForm{
+            @include loginFormProperty;          
+
+            .content{
+                display: flex;
+
+                .left{
+                    @include contentLayout;
+                }
+
+                .right{
+                    @include contentLayout;
+                    margin-left: 1em;
+                }
+
+                .active{
+                    border: 0.1rem solid var(--primary-color);
+                }
+               
+            }
+            
+            .formButton{
+                @include buttonProperty;
+            }
+        }
+    }
+}

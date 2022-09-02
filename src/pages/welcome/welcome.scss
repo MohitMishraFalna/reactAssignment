@@ -1,0 +1,27 @@
+@import "../../commonCss/common_css.scss";
+
+.welcome{
+    @include mainContentLayout;
+
+    .login{
+        display: flex;
+        justify-content: center;
+        margin-top: .8rem;
+
+        .loginForm{
+            @include loginFormProperty;
+
+            .formLabel{
+                @include labelProperty;
+            }
+
+            .formInput{
+                @include inputProperty;
+            }
+
+            .formButton{
+                @include buttonProperty;
+            }
+        }
+    }
+}
